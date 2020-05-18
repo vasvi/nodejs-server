@@ -45,15 +45,6 @@ app.delete('/api/todos/:id', (req, res) => {
     res.status(204).end()
 })
 
-/*
-app.delete('/api/todos/:id', (request, response) => {
-    const id = Number(request.params.id)
-    todos = todos.filter(note => note.id !== id)
-  
-    response.status(204).end()
-  })
-*/
-
 app.post('/api/todos', (req, res) => {
     const body = req.body
 
